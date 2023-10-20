@@ -44,9 +44,10 @@ const questions = [
       "Eclipse Public",
       "GNU v3.0",
       "GNU v2.0",
-      "GNU v2.    1",
+      "GNU v2.1",
       "Mozilla",
       "Unlicense",
+      "None"
     ],
   },
   {
@@ -61,21 +62,41 @@ const questions = [
   },
   {
     type: "input",
-    name: "questions",
+    name: "github",
     message: "Enter GitHub username:",
   },
   {
     type: "input",
-    name: "contact",
+    name: "email",
     message: "Enter email address:",
+  },
+  {
+    type: "input",
+    name: "screenshot",
+    message: "Enter path to screenshot:",
+  },
+  {
+    type: "input",
+    name: "link",
+    message: "Enter deployed link URL:",
   },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFileSync(fileName, data, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`README.md successfully generated.`)
+    }
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(())
+}
 
 // Function call to initialize app
 init();
