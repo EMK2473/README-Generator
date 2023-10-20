@@ -17,11 +17,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "table of contents",
-    message: "Enter project table of contents:",
-  },
-  {
-    type: "input",
     name: "installation",
     message: "Enter dependencies required for installation:",
   },
@@ -35,18 +30,12 @@ const questions = [
     name: "license",
     message: "Select license for project:",
     choices: [
-      "GNU",
-      "MIT",
-      "BSD 2-Clause",
-      "BSD 3-Clause",
-      "Boost",
-      "Creative Commons Zero",
-      "Eclipse Public",
-      "GNU v3.0",
-      "GNU v2.0",
-      "GNU v2.1",
-      "Mozilla",
-      "Unlicense",
+      "agpl-3.0",
+      "mpl-2.0",
+      "apache-2.0",
+      "mit",
+      "bsl-1.0",
+      "unlicense",
       "None"
     ],
   },
@@ -84,18 +73,15 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFileSync(fileName, data, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log(`README.md successfully generated.`)
-    }
-  });
-}
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  };
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then(())
+  inquirer.prompt(questions).then((responses) => {
+    console.log(`Generating README.md file`);
+    writeToFile("./dist/README.md", generateMarkdown({...responses}));
+  });
 }
 
 // Function call to initialize app
