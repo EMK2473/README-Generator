@@ -1,9 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-if (license !== 'none') {
-  return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-}
+  if (license !== "none") {
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  }
   return "";
 }
 // TODO: Create a function that returns the license link
@@ -21,41 +21,34 @@ function renderLicenseSection(license) {
   if (license) {
     return `Project licensed under [${license} License](https://choosealicense.com/licenses/${license}/).`;
   }
-    return "";
+  return "";
 }
 
 // TODO: Create a function to generate markdown for README
-
 
 // figure out render functions in README
 function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ## Licensing
-  ${data.license}
-  ${renderLicenseBadge(data.license)}
-  ${renderLicenseLink(data.license)}
-  ${renderLicenseSection(data.license)}
-  
-
-  ## Description
-  ${data.description}
-
-  ## Deployed link
-  ${data.link}
-
-  ## Screenshot
-  ![screenshot of application](${data.screenshot})
-
   ## Table of Contents
 
+  - [Description](#description)
+  - [Deployed Application](#deployed)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Contributions](#contributions)
   - [Tests](#tests)
+  - [Screenshot](#screenshot)
   - [Questions](#questions)
+
+  
+  ## Description
+  ${data.description}
+
+  ## Deployed link
+  ${data.link}
 
   ## Installation
   ${data.installation}
@@ -63,14 +56,25 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## Licensing
+  ${data.license}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
+
   ## Contributors
   ${data.contributions}
 
   ## Test Commands
   ${data.tests}
 
+  ## Screenshot
+  ![screenshot of application](${data.screenshot})
+
   ## Questions
-  For Questions, contact me at ${data.email} or visit [${data.github}](https://github.com/${data.github})
+  For Questions, contact me at ${data.email} or visit [${
+    data.github
+  }](https://github.com/${data.github})
 
 `;
 }
