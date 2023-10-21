@@ -1,9 +1,7 @@
-// TODO: Include packages needed for this application
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
 const path = require(`path`);
 const generateMarkdown = require(`./utils/generateMarkdown`);
-// TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -71,22 +69,14 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
   };
 
-// TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((responses) => {
     console.log(`README.md file Generated`);
     writeToFile("./dist/README.md", generateMarkdown({...responses}));
   });
 }
-
-// Function call to initialize app
 init();
-
-// The path module provides utilities for working with file and directory paths. It allows you to perform operations like joining and resolving file paths, extracting file extensions, and more. It's particularly useful when you need to work with file paths in a platform-independent way.
-
-// For example, you can use path.join() to join file and directory names into a full path, and path.resolve() to resolve a sequence of paths into an absolute path. 
