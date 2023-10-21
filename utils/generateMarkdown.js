@@ -50,19 +50,19 @@ function generateMarkdown(data) {
   ## Deployed link
   ${data.link}
 
-  ## Installation
+  ## Installation Requirements
   ${data.installation}
 
-  ## Usage
+  ## Application Usage
   ${data.usage}
 
-  ## Licensing
+  ## Licensing Information
   ${data.license}
   ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
 
-  ## Contributors
+  ## Contributions
   ${data.contributions}
 
   ## Test Commands

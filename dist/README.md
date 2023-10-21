@@ -20,19 +20,19 @@
   ## Deployed link
   n/a
 
-  ## Installation
+  ## Installation Requirements
   Inquirer 8.2.4
 
-  ## Usage
-  This application utilizes the command line, prompting the user for information regarding each section of the README.md, and then generates a professional README.md file.
+  ## Application Usage
+  Utilize the command line and respond to prompts regarding each section of a professional README.md file.
 
-  ## Licensing
+  ## Licensing Information
   mit
   ![Github license](https://img.shields.io/badge/license-mit-blue.svg)
   [License](https://choosealicense.com/licenses/mit/)
   Project licensed under [mit License](https://choosealicense.com/licenses/mit/).
 
-  ## Contributors
+  ## Contributions
   Eric Keeton
 
   ## Test Commands
@@ -42,5 +42,5 @@
   ![screenshot of application](n/a)
 
   ## Questions
-  For Questions, contact me at emk2473@gmail.com or visit [EMK2473](https://github.com/EMK2473)
+  For Questions, contact me at emk2473#gmail.com or visit [EMK2473](https://github.com/EMK2473)
 
