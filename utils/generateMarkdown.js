@@ -23,7 +23,6 @@ function generateMarkdown(data) {
   ## Table of Contents
 
   - [Description](#description)
-  - [Deployed Application](#deployed)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -35,9 +34,6 @@ function generateMarkdown(data) {
   
   ## Description
   ${data.description}
-
-  ## Deployed link
-  ${data.link}
 
   ## Installation Requirements
   ${data.installation}

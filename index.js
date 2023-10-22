@@ -1,7 +1,8 @@
 const fs = require(`fs`);
-const inquirer = require(`inquirer`);
 const path = require(`path`);
+const inquirer = require(`inquirer`);
 const generateMarkdown = require(`./utils/generateMarkdown`);
+
 const questions = [
   {
     type: "input",
@@ -24,7 +25,7 @@ const questions = [
     message: "Describe project usage:",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "Select license for project:",
     choices: [
@@ -34,7 +35,7 @@ const questions = [
       "mit",
       "bsl-1.0",
       "unlicense",
-      "none"
+      "none",
     ],
   },
   {
@@ -62,21 +63,16 @@ const questions = [
     name: "screenshot",
     message: "Enter path to screenshot:",
   },
-  {
-    type: "input",
-    name: "link",
-    message: "Enter deployed link URL:",
-  },
 ];
 
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-  };
+}
 
 function init() {
   inquirer.prompt(questions).then((responses) => {
-    console.log(`README.md file Generated`);
-    writeToFile("./dist/README.md", generateMarkdown({...responses}));
+    console.log(`README.md file Generated and/or Updated.`);
+    writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
   });
 }
 init();
