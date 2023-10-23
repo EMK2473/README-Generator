@@ -2,14 +2,14 @@ function renderLicenseBadge(license) {
   if (license !== "none") {
     return `![Github license](https://img.shields.io/badge/${license}-blue.svg)`;
   }
-  return "No license selected";
+  return "";
 }
 
 function renderLicenseSection(license) {
   if (license) {
     return `Project licensed using: [${license} License](https://choosealicense.com/licenses/${license}/).`;
   }
-  return "No license selected";
+  return "";
 }
 function generateMarkdown(data) {
   return `
