@@ -60,9 +60,13 @@ const questions = [
   },
   {
     type: "input",
+    name: "video",
+    message: "Enter link to video:",
+  },{
+    type: "input",
     name: "screenshot",
-    message: "Enter path to screenshot:",
-  },
+    message: "Enter path to screenshot(/...):",
+  }
 ];
 
 function writeToFile(fileName, data) {

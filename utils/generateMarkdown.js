@@ -1,17 +1,16 @@
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![Github license](https://img.shields.io/badge/${license}-blue.svg)`;
   }
-  return "";
+  return "No license selected";
 }
 
 function renderLicenseSection(license) {
   if (license) {
     return `Project licensed using: [${license} License](https://choosealicense.com/licenses/${license}/).`;
   }
-  return "";
+  return "No license selected";
 }
-
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -31,7 +30,6 @@ function generateMarkdown(data) {
   - [Screenshot](#screenshot)
   - [Questions](#questions)
 
-  
   ## Description
   ${data.description}
 
@@ -46,6 +44,9 @@ function generateMarkdown(data) {
 
   ## Test Commands
   ${data.tests}
+
+  ## Link to Video Instructions
+  ${data.video}
 
   ## Screenshot
   ![screenshot of application](${data.screenshot})

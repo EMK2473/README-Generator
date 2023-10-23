@@ -1,14 +1,13 @@
 
-  # TITLE
+  # README.md Generator
 
   ## Licensing Information
-  ![Github license](https://img.shields.io/badge/license-mit-blue.svg)
+  ![Github license](https://img.shields.io/badge/mit-blue.svg)
   Project licensed using: [mit License](https://choosealicense.com/licenses/mit/).
 
   ## Table of Contents
 
   - [Description](#description)
-  - [Deployed Application](#deployed)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -17,27 +16,26 @@
   - [Screenshot](#screenshot)
   - [Questions](#questions)
 
-  
   ## Description
-  DESCRIPTION
-
-  ## Deployed link
-  ;adfbdsfbas;
+  Command line application designed to quickly generate a professional README.md file.
 
   ## Installation Requirements
-  inquirer 8.2.4
+  Inquirer 8.2.4
 
   ## Application Usage
-  Command line: node index.js
+  Utilize the command line prompts regarding each section of the README.md and then generate a professional README.md file.
 
   ## Contributions
-  me
+  Eric Keeton
 
   ## Test Commands
   node index.js
 
+  ## Link to Video Instructions
+  n/a
+
   ## Screenshot
-  ![screenshot of application](/assets/sceenShot.png)
+  ![screenshot of application](/assets/screenShot.png)
 
   ## Questions
   For Questions, contact me at emk2473@gmail.com or visit [emk2473](https://github.com/emk2473)
