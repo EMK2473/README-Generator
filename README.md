@@ -39,5 +39,5 @@
   ![screenshot of application](/assets/screenShot.png)
 
   ## Questions
-  For Questions, contact me at emk2473@gmail.com or visit [emk2473](https://github.com/emk2473)
+  For Questions, contact me at emk2473@gmail.com or visit My GitHub: [emk2473](https://github.com/emk2473)
 

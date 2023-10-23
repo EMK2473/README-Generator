@@ -56,7 +56,7 @@ function generateMarkdown(data) {
   ![screenshot of application](${data.screenshot})
 
   ## Questions
-  For Questions, contact me at ${data.email} or visit [${
+  For Questions, contact me at ${data.email} or visit My Github: [${
     data.github
   }](https://github.com/${data.github})
 
