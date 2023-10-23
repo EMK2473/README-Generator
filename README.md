@@ -1,8 +1,7 @@
-  # README.md Generator
 
-  ## Licensing Information
+  # Professional README.md Generator
   ![Github license](https://img.shields.io/badge/mit-blue.svg)
-  Project licensed using: [mit License](https://choosealicense.com/licenses/mit/).
+  
 
   ## Table of Contents
 
@@ -22,8 +21,11 @@
   Inquirer 8.2.4
 
   ## Application Usage
-  Utilize the command line prompts regarding each section of the README.md and then generate a professional README.md file.
+  Utilize the command line prompts regarding each section of the README.md and then generate a professional README.md file in the /dist folder.
 
+  ## Licensing Information
+  Project licensed using: [mit License](https://choosealicense.com/licenses/mit/).
+  
   ## Contributions
   Eric Keeton
 
@@ -31,7 +33,7 @@
   node index.js
 
   ## Link to Video Instructions
-  n/a
+  https://drive.google.com/file/d/1bt-JOWAB1r4yrYhfTyUn4x9aPQA4O4v3/view
 
   ## Screenshot
   ![screenshot of application](/assets/screenShot.png)
