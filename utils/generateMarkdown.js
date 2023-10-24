@@ -2,16 +2,16 @@ function renderLicenseBadge(license) {
   if (license !== "none") {
     return `![Github license](https://img.shields.io/badge/${license}-blue.svg)`;
   } else {
-  return `![Github license](https://img.shields.io/badge/no-license-blue.svg)`;
-  };
+    return `![Github license](https://img.shields.io/badge/no-license-blue.svg)`;
+  }
 }
 
 function renderLicenseSection(license) {
   if (license === "none") {
     return `No license added`;
   } else {
-  return  `Project licensed using: [${license} License](https://choosealicense.com/licenses/${license}/).`;
-  };
+    return `Project licensed using: [${license} License](https://choosealicense.com/licenses/${license}/).`;
+  }
 }
 
 function generateMarkdown(data) {
@@ -23,11 +23,12 @@ function generateMarkdown(data) {
   ## Table of Contents
 
   - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
+  - [Installation](#installation-requirements)
+  - [Usage](#application-usage)
+  - [License](#licensing-information)
   - [Contributions](#contributions)
-  - [Tests](#tests)
+  - [Tests](#tests-commands)
+  - [Video Link](#link-to-video-instructions)
   - [Screenshot](#screenshot)
   - [Questions](#questions)
 
@@ -62,6 +63,5 @@ function generateMarkdown(data) {
 
 `;
 }
-
 
 module.exports = generateMarkdown;

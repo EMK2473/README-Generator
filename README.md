@@ -6,11 +6,11 @@
   ## Table of Contents
 
   - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Installation](#installation-requirements)
+  - [Usage](#application-usage)
   - [License](#license)
   - [Contributions](#contributions)
-  - [Tests](#tests)
+  - [Tests](#test-commands)
   - [Screenshot](#screenshot)
   - [Questions](#questions)
 
@@ -36,7 +36,7 @@
   https://drive.google.com/file/d/1bt-JOWAB1r4yrYhfTyUn4x9aPQA4O4v3/view
 
   ## Screenshot
-  ![screenshot of application](/assets/screenShot.png)
+  ![screenshot of application](./assets/screenShot.png)
 
   ## Questions
   For Questions, contact me at emk2473@gmail.com or visit My GitHub: [emk2473](https://github.com/emk2473)
