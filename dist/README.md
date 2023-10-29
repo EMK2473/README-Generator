@@ -1,8 +1,10 @@
 
-  # Professional README.md Generator
-  ![Github license](https://img.shields.io/badge/mit-blue.svg)
-  
+  # a
+  ![Github license](https://img.shields.io/badge/no-license-blue.svg)
+ 
 
+    No license added.
+  
   ## Table of Contents
 
   - [Description](#description)
@@ -16,29 +18,26 @@
   - [Questions](#questions)
 
   ## Description
-  Command line application designed to quickly generate a professional README.md file.
+  a
 
   ## Installation Requirements
-  Inquirer 8.2.4
+  a
 
   ## Application Usage
-  Utilize the command line prompts regarding each section of the README.md and then generate a professional README.md file in the /dist folder.
-
-  ## Licensing Information
-  Project licensed using: [mit License](https://choosealicense.com/licenses/mit/).
+  a
   
   ## Contributions
-  Eric Keeton
+  a
 
   ## Test Commands
-  node index.js
+  a
 
   ## Link to Video Instructions
-  https://drive.google.com/file/d/1bt-JOWAB1r4yrYhfTyUn4x9aPQA4O4v3/view
+  a
 
   ## Screenshot
-  ![screenshot of application](../assets/Screenshot2.png)
+  ![screenshot of application](a)
 
   ## Questions
-  For Questions, contact me at emk2473@gmail.com or visit My Github: [emk2473](https://github.com/emk2473)
+  For Questions, contact me at a or visit My Github: [a](https://github.com/a)
 

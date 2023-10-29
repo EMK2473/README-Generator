@@ -1,25 +1,16 @@
-function renderLicenseBadge(license) {
-  if (license !== "none") {
-    return `![Github license](https://img.shields.io/badge/${license}-blue.svg)`;
-  } else {
-    return `![Github license](https://img.shields.io/badge/no-license-blue.svg)`;
-  }
-}
-
 function renderLicenseSection(license) {
   if (license === "none") {
-    return `No license added`;
+    return `![Github license](https://img.shields.io/badge/no-license-blue.svg)\r\n \r\n
+    No license added.`
   } else {
-    return `Project licensed using: [${license} License](https://choosealicense.com/licenses/${license}/).`;
+    return `![Github license](https://img.shields.io/badge/${license}-blue.svg)\r\n \r\n Licensing: [${license}](https://choosealicense.com/licenses/${license}/)`;
   }
 }
-
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseSection(data.license)}
   
-
   ## Table of Contents
 
   - [Description](#description)
@@ -40,9 +31,6 @@ function generateMarkdown(data) {
 
   ## Application Usage
   ${data.usage}
-
-  ## Licensing Information
-  ${renderLicenseSection(data.license)}
   
   ## Contributions
   ${data.contributions}

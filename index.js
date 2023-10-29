@@ -26,7 +26,7 @@ const questions = [
   {
     type: "list",
     name: "license",
-    message: "Select license for project:",
+    message: "Select license for project: \r\n choose wisely",
     choices: [
       "agpl-3.0",
       "mpl-2.0",
@@ -61,11 +61,12 @@ const questions = [
     type: "input",
     name: "video",
     message: "Enter link to video:",
-  },{
+  },
+  {
     type: "input",
     name: "screenshot",
     message: "Enter path to screenshot(/...):",
-  }
+  },
 ];
 
 function writeToFile(fileName, data) {
