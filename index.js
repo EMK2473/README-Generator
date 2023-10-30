@@ -1,7 +1,8 @@
 const fs = require(`fs`);
 const path = require(`path`);
 const inquirer = require(`inquirer`);
-const generateMarkdown = require(`./utils/generateMarkdown`);
+const {Generator} = require('./utils/generateMarkdown');
+
 const questions = [
   {
     type: "input",
@@ -75,8 +76,9 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions).then((responses) => {
-    console.log(`README.md file Generated and/or Updated.`);
-    writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+    const generator = new Generator(responses)
+    console.log(`README.md file Generated.`);
+    writeToFile("./dist/README.md", generator.generateMarkdown(responses));
   });
 }
 init();
