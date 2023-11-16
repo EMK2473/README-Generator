@@ -1,8 +1,8 @@
 
-    # a
-    ![Github license](https://img.shields.io/badge/agpl-3.0-blue.svg)
+    # e-Commerce Back End
+    ![Github license](https://img.shields.io/badge/mit-blue.svg)
  
- Licensing: [agpl-3.0](https://choosealicense.com/licenses/agpl-3.0/)
+ Licensing: [mit](https://choosealicense.com/licenses/mit/)
     
     ## Table of Contents
   
@@ -17,27 +17,27 @@
     - [Questions](#questions)
   
     ## Description
-    a
+    A back end designed for e-commerce utilizing the latest technologies.
   
     ## Installation Requirements
-    a
+    dotenv@16.3.1 express@4.18.2 mysql2@3.6.3 sequelize@6.34.0
   
     ## Application Usage
-    a
+    Utilize Insomnia to to successfully create, update, and delete data in a database.
     
     ## Contributions
-    a
+    Eric Keeton
   
     ## Test Commands
-    a
+    npm i (install all dependencies) npm run seed (seed your database) npm run start (initialize the connection)
   
     ## Link to Video Instructions
-    a
+    n/a
   
     ## Screenshot
-    ![screenshot of application](a)
+    ![screenshot of application](n/a)
   
     ## Questions
-    For Questions, contact me at a or visit My Github: [a](https://github.com/a)
+    For Questions, contact me at emk2473@gmail.com or visit My Github: [EMK2473](https://github.com/EMK2473)
   
   
